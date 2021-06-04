@@ -1,0 +1,319 @@
+:root {
+  --touch-color: rgba(33, 150, 243, 1);
+  --while-color: rgba(255, 255, 255, 1);
+  --black-color: #212121;
+  --background-color: #2f303a;
+  --color-grey: rgba(117, 117, 117, 1);
+  --main-font: "Roboto", sans-serif;
+  --accent-font: "Raleway", sans-serif;
+}
+
+/*наследуй цвет шрифта от родителя*/
+a {
+  color: inherit;
+  /*убрали нижнее подчеркивание*/
+  text-decoration: none;
+}
+.container {
+  width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 15px;
+}
+/*header*/
+.header .container {
+  padding-top: 24px;
+  padding-bottom: 25px;
+  display: flex;
+  border: 1px solid #ececec;
+}
+
+.nav {
+  display: flex;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+.media-list {
+  display: flex;
+  align-items: center;
+}
+
+.media-list-mail {
+  margin-left: 331px;
+  margin-right: 50px;
+}
+.logo {
+  color: rgba(0, 0, 0, 1);
+  font-family: var(--accent-font);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.192;
+  letter-spacing: 0.03em;
+  margin-right: 93px;
+}
+
+.logo .web {
+  color: var(--touch-color);
+}
+.navigation-link:hover,
+.navigation-link:focus {
+  color: var(--touch-color);
+}
+.navigation-link:not(:last-child) {
+  margin-right: 50px;
+}
+.navigation {
+  font: var(--main-font);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.172;
+  letter-spacing: 0.02em;
+}
+.media-list-mail:hover,
+.media-list-mail:focus,
+.media-list-tel:hover,
+.media-list-tel:focus {
+  color: var(--touch-color);
+}
+.media-list {
+  font: var(--main-font);
+  color: var(--color-grey);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.02em;
+}
+
+/*========style index============*/
+.hero {
+  background: var(--background-color);
+}
+.hero .container {
+  padding-top: 200px;
+  padding-right: auto;
+  padding-bottom: 200px;
+  padding-left: auto;
+}
+.hero .hero-content {
+  margin-bottom: 30px;
+  text-align: center;
+  color: var(--while-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.363;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+/*======button=======*/
+.hero .service {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.service:hover,
+.service:focus {
+  background-color: #188ce8;
+}
+
+.service {
+  background: #2196f3;
+  color: rgba(255, 255, 255, 1);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  display: flex;
+  padding: 10px 32px;
+  letter-spacing: 1.875;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.875;
+  cursor: pointer;
+  border-radius: 4px;
+  border: none;
+}
+/*======About========*/
+.about {
+  background-color: #e5e5e5;
+}
+.about .container {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.about .my-working {
+  display: flex;
+}
+.my-working-text:not(:last-child) {
+  margin-right: 30px;
+}
+
+.text {
+  color: var(--black-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.post-text {
+  flex-wrap: wrap;
+  margin-top: 10px;
+  width: 270px;
+}
+
+.post-text {
+  color: var(--color-grey);
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+}
+/*======= TITLE===========*/
+
+.about .title {
+  margin-bottom: 50px;
+}
+
+.title {
+  text-align: center;
+  color: var(--black-color);
+  font-weight: bold;
+  font-size: 36px;
+  letter-spacing: 0.03em;
+  line-height: 1.167;
+}
+.working-title {
+  display: flex;
+  margin-top: -30px;
+  margin-left: -30px;
+}
+.working-title-foto {
+  flex-wrap: wrap;
+  margin-top: 30px;
+  margin-left: 30px;
+}
+/*====MY COMANDS========*/
+
+.my-comands .container {
+  background-color: rgba(245, 244, 250, 1);
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.my-comands .title {
+  margin-bottom: 50px;
+  text-align: center;
+}
+.working-comands {
+  display: flex;
+  width: 270px;
+  text-align: center;
+  margin-top: -30px;
+  margin-left: -30px;
+  flex-basis: calcl(100%-90) / 4;
+}
+
+.foto-people {
+  margin-top: 30px;
+  margin-left: 30px;
+  padding-bottom: 30px;
+  background-color: rgba(245, 244, 250, 1);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+.my-comands .name-people {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+.name-people {
+  color: var(--black-color);
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.03em;
+  line-height: 1.187;
+}
+
+.profession {
+  font-family: var(--main-font);
+  color: var(--color-grey);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.187;
+  letter-spacing: 0.03em;
+  margin-top: 10px;
+}
+
+/*=====style portfolio=========*/
+
+.project-work .container {
+  padding-top: 100px;
+  padding-bottom: 94px;
+}
+.project {
+  color: transparent;
+}
+
+/*button*/
+
+/*===== footer======*/
+.contacts .container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.contacts {
+  background-color: var(--background-color);
+}
+
+.studio {
+  color: var(--while-color);
+}
+.contacts .logo {
+  margin-bottom: 20px;
+}
+.adress-list {
+  margin-bottom: 9px;
+}
+.mail-list {
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 9px;
+}
+.tel-list {
+  color: rgba(255, 255, 255, 0.6);
+}
+.adress {
+  color: var(--while-color);
+  font-family: var(--main-font);
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+}
+.adress-list:hover,
+.adress-list:focus,
+.mail-list:hover,
+.mail-list:focus,
+.tel-list:hover,
+.tel-list:focus {
+  color: var(--touch-color);
+  height: 252px;
+  left: 0px;
+  top: 2097px;
+}
+
+/*цвет основного фона
+rgba(47, 48, 58, 1)*/
+/*цвет героя
+background: rgba(255, 255, 255, 1);
+*/
+/* цвет футера
+background: rgba(47, 48, 58, 1);
+*/
+/*цвет текста
+background: rgba(33, 33, 33, 1);
+*/
+/*цвет кнопки
+background: rgba(33, 150, 243, 1);
+*/
