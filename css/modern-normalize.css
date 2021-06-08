@@ -1,6 +1,8 @@
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
-* {
-  box-sizing: border-box;
+*,
+::after,
+::before {
+  box-sizing: inherit;
   margin: 0;
   padding: 0;
 }
@@ -27,6 +29,7 @@ ol {
  */
 
 html {
+  box-sizing: border-box;
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
 }
