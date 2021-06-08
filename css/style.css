@@ -135,9 +135,7 @@ a {
   border: none;
 }
 /*======About========*/
-.about {
-  background-color: #e5e5e5;
-}
+
 .about .container {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -171,8 +169,10 @@ a {
   letter-spacing: 0.03em;
 }
 /*======= TITLE===========*/
-
-.about .title {
+.about-section {
+  padding-bottom: 94px;
+}
+.about-section .title {
   margin-bottom: 50px;
 }
 
@@ -352,7 +352,7 @@ a {
   margin-top: 20px;
 }
 /*===== footer======*/
-.contacts .container {
+.contacts {
   padding-top: 60px;
   padding-bottom: 60px;
 }
