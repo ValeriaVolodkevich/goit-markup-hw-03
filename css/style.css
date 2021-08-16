@@ -7,7 +7,20 @@
   --main-font: "Roboto", sans-serif;
   --accent-font: "Raleway", sans-serif;
 }
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
+body {
+  font-family: var(--main-font);
+  color: var(--black-color);
+}
+/*убрать точки списка*/
+ul {
+  list-style: none;
+}
 /*наследуй цвет шрифта от родителя*/
 a {
   color: inherit;
@@ -57,7 +70,7 @@ a {
   line-height: 1.192;
   letter-spacing: 0.03em;
   margin-right: 93px;
-}
+  }
 
 .logo .web {
   color: var(--touch-color);
@@ -75,6 +88,10 @@ a {
   font-size: 14px;
   line-height: 1.172;
   letter-spacing: 0.02em;
+}
+.media-list:hover,
+.media-list:focus {
+  color: var(--touch-color);
 }
 .media-list-mail:hover,
 .media-list-mail:focus,
@@ -104,6 +121,14 @@ a {
 .hero .hero-content {
   margin-bottom: 30px;
   text-align: center;
+  color: var(--while-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.363;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+h1 {
   color: var(--while-color);
   font-weight: 900;
   font-size: 44px;
@@ -197,6 +222,7 @@ a {
   margin-top: 30px;
   margin-left: 30px;
 }
+
 /*====MY COMANDS========*/
 .my-comands {
   background: #f5f4fa;
