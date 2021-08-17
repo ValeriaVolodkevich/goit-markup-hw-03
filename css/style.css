@@ -27,6 +27,12 @@ a {
   /*убрали нижнее подчеркивание*/
   text-decoration: none;
 }
+/*
+img {
+  width: 100%;
+  height: auto;
+}*/
+
 .container {
   width: 1200px;
   margin-right: auto;
@@ -124,7 +130,7 @@ a {
 .hero {
   background: var(--background-color);
 }
-.hero .container {
+.hero {
   padding-top: 200px;
   padding-right: auto;
   padding-bottom: 200px;
@@ -176,7 +182,7 @@ h1 {
 }
 /*======About========*/
 
-.about .container {
+.about  {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -240,14 +246,18 @@ h1 {
   background: #f5f4fa;
 }
 
-.my-comands .container {
+.my-comands {
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
-.my-comands .title {
+.my-comands .title{
   margin-bottom: 50px;
   text-align: center;
+}
+.comands-item{
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 .working-comands {
   display: flex;
@@ -261,12 +271,12 @@ h1 {
 .foto-people {
   margin-top: 30px;
   margin-left: 30px;
-  padding-bottom: 30px;
-  background-color: white;
+    background-color: white;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-}
+  }
+
 .my-comands .name-people {
   margin-top: 30px;
   margin-bottom: 10px;
@@ -343,27 +353,29 @@ h1 {
 }
 
 .portfolio {
+  margin: auto;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
  padding-bottom: 94px;
   flex-basis: calc((100% - 90px) / 3);
 }
+
 .portfolio-list{
-  
-  
-  padding-left: auto;
+    
   margin-top: -30px;
   margin-left: -30px;
 }
-.portfolio-list {
+.portfolio-list{
   width: 370px;
   height: 404px;
-  margin-left: 30px;
-  margin-top: 30px;
+   margin-top: 30px;
+   margin-left: 30px;
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
 }
+
 .portfolio-item{
   padding-left: 24px;
   padding-top: 20px;
@@ -374,7 +386,7 @@ h1 {
   line-height: 36px;
   color: var(--black-color);
 }
-.portfolio .portfolio-name {
+ .portfolio-name {
   margin-top: 20px;
   margin-bottom: 4px;} 
 
@@ -390,10 +402,10 @@ h1 {
 .portfolio-nav {
   font-weight: normal;
   font-size: 16px;
-  line-height: 0.533;
+  line-height: 1.88;
   letter-spacing: 0.03em;
   color: #757575;
-  margin-top: 4px;
+  margin-bottom: 4px;
 
   
 }
