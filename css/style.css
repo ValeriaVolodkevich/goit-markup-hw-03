@@ -27,11 +27,12 @@ a {
   /*убрали нижнее подчеркивание*/
   text-decoration: none;
 }
-/*
+
 img {
+  display: block;
   width: 100%;
   height: auto;
-}*/
+}
 
 .container {
   width: 1200px;
@@ -188,6 +189,8 @@ h1 {
 }
 .about .my-working {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .my-working-text:not(:last-child) {
   margin-right: 30px;
@@ -261,24 +264,23 @@ h1 {
 }
 .working-comands {
   display: flex;
-  width: 270px;
   text-align: center;
-  margin-top: -30px;
   margin-left: -30px;
   flex-basis: calc((100%-120) / 4);
 }
 
 .foto-people {
-  margin-top: 30px;
-  margin-left: 30px;
-    background-color: white;
+  
+  background-color: white;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+  0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   }
 
+.foto-people:not(:last-child) {
+  margin-right: 30px;}
+
 .my-comands .name-people {
-  margin-top: 30px;
   margin-bottom: 10px;
 }
 .name-people {
@@ -296,7 +298,7 @@ h1 {
   font-size: 16px;
   line-height: 1.187;
   letter-spacing: 0.03em;
-  margin-top: 10px;
+ 
 }
 
 /*=====style portfolio=========*/
@@ -386,17 +388,15 @@ h1 {
   line-height: 36px;
   color: var(--black-color);
 }
- .portfolio-name {
-  margin-top: 20px;
-  margin-bottom: 4px;} 
+
 
 .portfolio-name {
   font-weight: bold;
   font-size: 18px;
-  line-height: 0.5;
+  line-height: 2;
   letter-spacing: 0.06em;
   color: var(--black-color);
-  padding-bottom: 4px;
+  margin-bottom: 4px;
   
 }
 .portfolio-nav {
@@ -405,9 +405,7 @@ h1 {
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: #757575;
-  margin-bottom: 4px;
-
-  
+   
 }
 
 /*===== footer======*/
